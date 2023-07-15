@@ -1,0 +1,21 @@
+//Vaild palindrome using two pointer pattern
+//Runtime O(N)
+//SpaceTime = O(1)
+
+function validPalindrome(str) {
+    let left = 0;
+    let right = str.length - 1;
+
+    while(left < right) {
+        if(str[left] === str[right]) {
+            left++;
+            right--;
+        } else {
+            return false;
+        }
+    }
+
+    return true;
+}
+
+//You could also be done by reversing the string and seeing if its alike to the normal string
