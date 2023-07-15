@@ -1,0 +1,3 @@
+Two Sum:
+
+Using a hash map is the fastest solution. O(N) runtime. Gets the differnce of the target - nums[i] and checks if its in the hashmap.
